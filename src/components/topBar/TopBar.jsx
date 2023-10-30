@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "./TopBar.module.scss";
+import { SearchIcon } from "../SearchIcon";
 
 const TopBar = () => {
   return (
@@ -18,10 +19,13 @@ const TopBar = () => {
           <input
             type="url"
             className={styles.topBar__form__searchBar}
-            placeholder="Enter URL"
+            placeholder="Enter a valid URL"
           />
           <button type="submit" className={styles.topBar__form__btnMain}>
             <span className={styles.btnText}>SEND</span>
+            <span className={styles.smIconWrapper}>
+              <SearchIcon />
+            </span>
           </button>
         </form>
       </div>
