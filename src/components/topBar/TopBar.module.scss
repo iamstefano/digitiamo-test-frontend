@@ -1,0 +1,53 @@
+.topBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  &__form {
+    background-color: $grey-medium;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    max-width: 600px;
+    margin: 20px;
+    border-radius: 5px;
+    width: 70%;
+
+    &__select {
+      padding: 10px 4px;
+      margin-right: 10px;
+      background: $grey-dark;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      appearance: none;
+    }
+
+    &__searchBar {
+      flex: 1;
+      padding: 5px 10px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      border: none;
+      background: none;
+      outline: none;
+    }
+
+    &__btnMain {
+      background: $btn-main;
+      color: #ffffff;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: darken($btn-main, 7%);
+        transition: 0.5s;
+      }
+    }
+  }
+}

@@ -1,11 +1,15 @@
 import { useState } from "react";
 
-import "./App.css";
+import "./App.scss";
+
+import TopBar from "./components/topBar";
 
 function App() {
   return (
     <>
-      <div></div>
+      <div>
+        <TopBar />
+      </div>
     </>
   );
 }
