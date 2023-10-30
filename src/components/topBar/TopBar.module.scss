@@ -22,7 +22,15 @@
       border: none;
       border-radius: 5px;
       text-align: center;
+      outline: none;
       appearance: none;
+      cursor: pointer;
+
+      option {
+        outline: none;
+        appearance: none;
+        -webkit-appearance: none;
+      }
     }
 
     &__searchBar {
