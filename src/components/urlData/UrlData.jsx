@@ -13,7 +13,7 @@ const UrlData = ({ url }) => {
     scheme = urlObj.protocol.replace(":", "");
     path = urlObj.pathname;
   } catch (error) {
-    // Handle invalid URL input
+    // Invalid URL input
   }
 
   return (
