@@ -5,7 +5,7 @@
   margin-top: 20px;
 
   &__form {
-    background-color: $grey-medium;
+    background-color: $grey-medium2;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,7 +18,7 @@
     &__select {
       padding: 10px 4px;
       margin-right: 10px;
-      background: $grey-dark;
+      background: $grey-medium;
       border: none;
       border-radius: 5px;
       text-align: center;
