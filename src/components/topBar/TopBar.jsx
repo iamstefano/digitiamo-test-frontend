@@ -4,7 +4,7 @@ import { SearchIcon } from "../SearchIcon";
 
 const TopBar = ({ onSubmit }) => {
   const [url, setUrl] = useState("");
-  const [method, setMethod] = useState("");
+  const [method, setMethod] = useState("GET");
   const [response, setResponse] = useState(null);
   const [error, setError] = useState(null);
 
@@ -18,20 +18,29 @@ const TopBar = ({ onSubmit }) => {
       setResponse(data.data[method]);
       onSubmit(url);
     } catch (err) {
-      setError(err.message);
+      setError(
+        "An error occurred fetching the data,\nmaybe the JSON hosting site is down :("
+      );
     }
   };
 
   return (
     <>
+      {error && (
+        <div className={styles.errorMessage}>
+          <span>500</span>
+          <p>{error}</p>
+        </div>
+      )}
+      {response && (
+        <>
+          <div className={styles.statusContainer}>
+            <h1>{response.statusCode}</h1>
+            <p>{response.description}</p>
+          </div>
+        </>
+      )}
       <div className={styles.topBar}>
-        {error && <p>Error: {error}</p>}
-        {response && (
-          <>
-            <p>Status Code: {response.statusCode}</p>
-            <p>Description: {response.description}</p>
-          </>
-        )}
         <form className={styles.topBar__form} onSubmit={handleSubmit}>
           <select
             name="methods"
@@ -60,6 +69,20 @@ const TopBar = ({ onSubmit }) => {
             </span>
           </button>
         </form>
+        {error && (
+          <div className={styles.errorMessageMobile}>
+            <span>500</span>
+            <p>{error}</p>
+          </div>
+        )}
+        {response && (
+          <>
+            <div className={styles.statusContainerMobile}>
+              <h1>{response.statusCode}</h1>
+              <p>{response.description}</p>
+            </div>
+          </>
+        )}
       </div>
     </>
   );

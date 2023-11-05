@@ -1,8 +1,9 @@
 .topBar {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin: 10px 0 10px 0;
 
   &__form {
     background-color: $grey-medium2;
@@ -11,7 +12,7 @@
     align-items: center;
     padding: 10px;
     max-width: 600px;
-    margin: 20px;
+    margin: 4px;
     border-radius: 5px;
     width: 100%;
 
@@ -74,4 +75,90 @@
   }
 }
 
+.statusContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-weight: 400;
+    font-size: 52px;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.statusContainerMobile {
+  display: none;
+}
+
+.errorMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  white-space: pre-wrap;
+
+  span {
+    font-size: 42px;
+    color: $error-color;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.errorMessageMobile {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .statusContainer {
+    display: none;
+  }
+
+  .statusContainerMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-weight: 400;
+      font-size: 46px;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .errorMessage {
+    display: none;
+  }
+
+  .errorMessageMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    white-space: pre-wrap;
+    padding-bottom: 12px;
+
+    span {
+      font-size: 42px;
+      color: $error-color;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
 /* On screens that are 600px or less, change the style of Send button using the Lens svg icon */
