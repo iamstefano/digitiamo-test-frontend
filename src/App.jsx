@@ -4,6 +4,7 @@ import "./App.scss";
 
 import TopBar from "./components/topBar";
 import UrlData from "./components/urlData";
+import RequestBlock1 from "./components/requestBlock1";
 
 function App() {
   const [inputUrl, setInputUrl] = useState("");
@@ -16,7 +17,10 @@ function App() {
     <>
       <div>
         <TopBar onSubmit={handleForm} />
-        <UrlData url={inputUrl} />
+        <div className="dataCardsContainer">
+          <UrlData url={inputUrl} />
+          <RequestBlock1 />
+        </div>
       </div>
     </>
   );
