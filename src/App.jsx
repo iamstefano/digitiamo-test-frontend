@@ -8,6 +8,7 @@ import RequestBlock1 from "./components/requestBlock1";
 import RequestBlock2 from "./components/requestBlock2";
 import FormatCurrentDate from "./helpers/formatCurrentDate";
 import ShareComponent from "./components/shareComponent/ShareComponent";
+import BottomSheetModal from "./components/bottomSheetModal/BottomSheetModal";
 function App() {
   const [inputUrl, setInputUrl] = useState("");
   const [statusCode, setStatusCode] = useState(null);
@@ -30,6 +31,7 @@ function App() {
           />
         </div>
         <ShareComponent />
+        <BottomSheetModal />
       </div>
     </>
   );
