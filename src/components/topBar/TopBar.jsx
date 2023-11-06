@@ -16,7 +16,7 @@ const TopBar = ({ onSubmit }) => {
       );
       const data = await res.json();
       setResponse(data.data[method]);
-      onSubmit(url);
+      onSubmit(url, data.data[method].statusCode);
     } catch (err) {
       setError(
         "An error occurred fetching the data,\nmaybe the JSON hosting site is down :("
