@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import ModalSheet from "react-modal-sheet";
 
 import styles from "./BottomSheetModal.module.scss";
+import TimingAnalysisChart from "../timingAnalysisChart/TimingAnalysisChart";
 
 const BottomSheetModal = () => {
   const sheetRef = useRef();
@@ -22,6 +23,7 @@ const BottomSheetModal = () => {
           <ModalSheet.Content>
             <div className={styles.bottomSheetModal}>
               <p>Draggable Bottom Sheet</p>
+              <TimingAnalysisChart />
             </div>
           </ModalSheet.Content>
         </ModalSheet.Container>
