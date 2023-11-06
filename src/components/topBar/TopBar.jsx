@@ -61,6 +61,7 @@ const TopBar = ({ onSubmit }) => {
             placeholder="Enter a valid URL"
             value={url}
             onChange={(e) => setUrl(e.target.value)}
+            required
           />
           <button type="submit" className={styles.topBar__form__btnMain}>
             <span className={styles.btnText}>SEND</span>

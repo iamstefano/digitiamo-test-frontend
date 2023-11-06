@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10px 0 10px 0;
+  margin: 1em 0 1em 0;
 
   &__form {
     background-color: $grey-medium2;
@@ -11,7 +11,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    max-width: 600px;
+    max-width: 500px;
     margin: 4px;
     border-radius: 5px;
     width: 100%;
@@ -118,6 +118,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .topBar {
+    margin: 1em 1em 0 1em;
+  }
   .statusContainer {
     display: none;
   }
