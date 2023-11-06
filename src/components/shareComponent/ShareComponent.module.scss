@@ -1,0 +1,30 @@
+.shareComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1em;
+
+  &__title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 2em;
+    margin: 0;
+    background-color: $grey-medium;
+    border-radius: 20px;
+
+    a {
+      cursor: pointer;
+    }
+  }
+}

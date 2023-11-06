@@ -7,7 +7,7 @@ import UrlData from "./components/urlData";
 import RequestBlock1 from "./components/requestBlock1";
 import RequestBlock2 from "./components/requestBlock2";
 import FormatCurrentDate from "./helpers/formatCurrentDate";
-
+import ShareComponent from "./components/shareComponent/ShareComponent";
 function App() {
   const [inputUrl, setInputUrl] = useState("");
   const [statusCode, setStatusCode] = useState(null);
@@ -29,6 +29,7 @@ function App() {
             currentDate={FormatCurrentDate()}
           />
         </div>
+        <ShareComponent />
       </div>
     </>
   );

@@ -1,8 +1,9 @@
 .urlData {
-  background-color: $grey-medium;
+  background-color: $grey-light;
   width: 240px;
   height: 290px;
   border-radius: 5px;
+  flex: none;
 
   &__title {
     margin-left: 10px;
