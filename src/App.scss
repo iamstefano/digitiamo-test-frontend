@@ -8,3 +8,10 @@
   text-decoration: none;
   color: inherit;
 }
+
+.dataCardsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

@@ -36,16 +36,3 @@ const UrlData = ({ url }) => {
 };
 
 export default UrlData;
-
-/* const UrlData = ({ enteredUrl }) => {
-  // Function to split the URL
-  const splitUrl = (url) => {
-    const urlObject = new URL(url);
-    const domain = urlObject.hostname;
-    const scheme = urlObject.protocol.replace(":", "");
-    const path = urlObject.pathname;
-    return { domain, scheme, path };
-  };
-
-  // Use the splitUrl function to extract the data
-  const { domain, scheme, path } = splitUrl(enteredUrl); */
