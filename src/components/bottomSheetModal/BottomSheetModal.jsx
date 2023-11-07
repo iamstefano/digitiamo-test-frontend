@@ -22,7 +22,7 @@ const BottomSheetModal = () => {
           <ModalSheet.Header />
           <ModalSheet.Content>
             <div className={styles.bottomSheetModal}>
-              <p>Draggable Bottom Sheet</p>
+              <h3>Timing Analysis</h3>
               <TimingAnalysisChart />
             </div>
           </ModalSheet.Content>

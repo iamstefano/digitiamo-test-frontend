@@ -1,0 +1,36 @@
+.timingAnalysisChart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+  /* width: 100%; */
+  padding: 0 10px 10px 10px;
+
+  #gauge1,
+  #gauge2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100px;
+  }
+  .textChartP {
+    font-size: 1em;
+    transform: translate(-0px, -155px);
+    margin: 0;
+  }
+  .pageLoadValue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    font-size: 1.5em;
+    font-weight: 600;
+
+    p:first-of-type {
+      color: $grey-p;
+    }
+  }
+}
